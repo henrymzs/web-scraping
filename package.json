@@ -1,0 +1,12 @@
+{
+    "name": "product-listing",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces":["frontend", "backend"],
+
+    "scripts": {
+        "dev": "bun run start:frontend & bun run start:backend",
+        "start:frontend": "cd frontend && bun dev",
+        "start:backend": "cd backend && bun run index.js"
+    }
+}
