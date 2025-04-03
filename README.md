@@ -28,7 +28,7 @@ Exemplo de Requisição:
 GET http://localhost:3000/api/scrape/iphone
 ```
 Exemplo de Resposta:
-
+```
 {
 	"results": [
 		{
@@ -45,23 +45,27 @@ Exemplo de Resposta:
 # Como Executar o Projeto
 
 1. Clone o repositório:
+
 ```
 git clone https://github.com/henrymzs/web-scraping.git
 cd nome-do-seu-repositorio
 ```
 
 2. Inicie um projeto Bun.js e Instale as dependências:
+
 ```
 bun install
 ```
 
 3. Configure o arquivo .env com suas credenciais do banco de dados:
+
 ```
 PORT = Porta do backend
 PORTF = porta do frontend
 ```
 
 4. Execute a API
+
 ```
 na raiz do diretório digite bun run dev, esse comando irá rodar frontend e backend
 atenção, olhe a porta que o frontend esta rodando, coloque essa porta no PORTF para que funcione perfeitamente o código
