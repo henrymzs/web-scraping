@@ -2,16 +2,13 @@ import express from "express";
 import axios from "axios";
 import { JSDOM } from "jsdom";
 import cors from "cors"; 
-import dotenv from "dotenv";
-
-dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 8080;
-const PORTF = process.env.PORTF
+const PORT = 3000 || 8080;
+const PORTF = 5173
 
 app.use(cors({
-    origin: `http://localhost:${PORTF}`, // deve permitir apenas o meu frontend
+    origin: [`http://localhost:${PORTF}`, `http://127.0.0.1:${PORTF}`], // deve permitir apenas o meu frontend
     methods: ['GET'], // deve permitir apenas requisições GET
     credentials: true // deve permitir envio de cookies, se necessário
   }));
