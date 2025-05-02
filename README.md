@@ -25,19 +25,19 @@ GET /api/scrape/:keyword
 Endpoint para realizar a busca de produtos na Amazon, passando uma palavra-chave na URL.
 Exemplo de Requisição:
 ```
-GET http://localhost:3000/api/scrape/iphone
+GET http://localhost:3000/api/scrape/tecnologia
 ```
 Exemplo de Resposta:
 ```
 {
-	"results": [
-		{
-			"title": "Tecnologias e ciências da linguagem: vertentes e novas aplicações (volume 1)",
-			"price": "0,00",
-			"image": "https://m.media-amazon.com/images/I/81YPwea8fxL._AC_UL320_.jpg",
-			"rating": "4,4 de 5 estrelas",
-			"link": "https://www.amazon.com.br/keyword-etc...."
-		},
+  "results": [
+	{
+	  "title": "Tecnologias e ciências da linguagem: vertentes e novas aplicações (volume 1)",
+	  "price": "0,00",
+	  "image": "https://m.media-amazon.com/images/I/81YPwea8fxL._AC_UL320_.jpg",
+	  "rating": "4,4 de 5 estrelas",
+	  "link": "https://www.amazon.com.br/keyword-etc...."
+	},
     ]
 }
 ```
@@ -57,16 +57,12 @@ cd nome-do-seu-repositorio
 bun install
 ```
 
-3. Configure o arquivo .env com suas credenciais do banco de dados:
+3. Execute a API
 
 ```
-PORT = Porta do backend
-PORTF = porta do frontend
+bun run dev
 ```
 
-4. Execute a API
+Na raiz do diretório digite o comando acima, esse comando irá rodar frontend e backend.
 
-```
-na raiz do diretório digite bun run dev, esse comando irá rodar frontend e backend
-atenção, olhe a porta que o frontend esta rodando, coloque essa porta no PORTF para que funcione perfeitamente o código
-```
+
