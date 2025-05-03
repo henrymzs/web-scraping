@@ -1,17 +1,17 @@
-# Projeto de Scraping de Produtos da Amazon
+# Web Scraping Project
 
-Este projeto foi desenvolvido como parte do meu aprendizado em scraping de dados e construção de aplicações web. O objetivo é realizar a extração de dados de produtos da Amazon (como título, preço, imagem e classificação) com base em uma palavra-chave fornecida pelo usuário. O projeto utiliza Bun.js, Axios, JSDOM, e Vanilla JavaScript para o back-end e front-end, com a implementação de uma API que extrai os dados de forma eficiente.
+This project was developed as part of my learning process in data scraping and building web applications. The goal is to extract Amazon product data (such as title, price, image, and rating) based on a user-provided keyword. The project uses Bun.js, Axios, JSDOM, and Vanilla JavaScript for the backend and frontend, and implements an API that extracts the data efficiently.
 
-Estou sempre em busca de aprimorar minhas habilidades, então qualquer feedback sobre o projeto, código, arquitetura ou boas práticas será muito bem-vindo! Se quiser contribuir com sugestões, você pode:
+I'm always looking to improve my skills, so any feedback on the project, code, architecture or best practices is very welcome! If you want to contribute with suggestions, you can:
 
-- 📧 Me enviar um e-mail: henrykaua21@gmail.com
-- 🔗 Se conectar comigo no [LinkedIn](https://www.linkedin.com/in/henry-kaua/)
-- 🐛 Abrir uma [issue](https://github.com/henrymzs/web-scraping/issues) aqui no repositório
-- 👽 Notas do que aprendi durante o desenvolvimento desse projeto [Notes](./backend/Notes.md)
+- 📧 Send me an email: henrykaua21@gmail.com
+- 🔗 Connect with me on [LinkedIn](https://www.linkedin.com/in/henry-kaua/)
+- 🐛 Open a [issue](https://github.com/henrymzs/web-scraping/issues) aqui no repositório
+- 👽 Notes on what I learned during the development of this project [Notes](./backend/Notes.md)
 
-Toda ajuda é muito apreciada e me auxilia a crescer como desenvolvedor. 🚀
+All help is greatly appreciated and helps me grow as a developer. 🚀
 
-# Tecnologias Utilizadas 
+# Technologies Used
 - Bun.js
 - Axios
 - JSDOM
@@ -19,15 +19,15 @@ Toda ajuda é muito apreciada e me auxilia a crescer como desenvolvedor. 🚀
 - HTML/CSS
 - Vite
 
-# Endpoints da API
-Buscar Produtos da Amazon
+# API Endpoints
+Search for Amazon Products
 GET /api/scrape/:keyword
-Endpoint para realizar a busca de produtos na Amazon, passando uma palavra-chave na URL.
-Exemplo de Requisição:
+Endpoint to search for products on Amazon, passing a keyword in the URL.
+Example Request:
 ```
 GET http://localhost:3000/api/scrape/tecnologia
 ```
-Exemplo de Resposta:
+Example Response:
 ```
 {
   "results": [
@@ -42,27 +42,26 @@ Exemplo de Resposta:
 }
 ```
 
-# Como Executar o Projeto
+# How to Run the Project
 
-1. Clone o repositório:
+1. Clone the repository:
 
 ```
 git clone https://github.com/henrymzs/web-scraping.git
-cd nome-do-seu-repositorio
+cd your-repository-name
 ```
 
-2. Inicie um projeto Bun.js e Instale as dependências:
+2. Start a Bun.js project and install dependencies:
 
 ```
 bun install
 ```
 
-3. Execute a API
+3. Run the API
 
 ```
 bun run dev
 ```
 
-Na raiz do diretório digite o comando acima, esse comando irá rodar frontend e backend.
-
+In the root of the directory type the command above, this command will run frontend and backend.
 
